@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##########
-# Shell script to create directories & files for Reproducible Research in R/RStudio
+# Shell script to create directories & files for A Book with 14 Chapters
 # Christopher Gandrud
 # Updated 28 June 2012
 # Helpful information found in "The Linux Command Line: A Complete Introduction" (Shotts 2012)
@@ -9,29 +9,30 @@
 
 cd ~/Desktop
 
-mkdir RRBook
+mkdir Book
 
 ## Make chapters
 
-cd ~/Desktop/RRBook
+cd ~/Desktop/Book
 
 mkdir Source
 
-cd ~/Desktop/RRBook/Source
+cd ~/Desktop/Book/Source
 
 ## Create 14 chapters and add main source files and image directories
 ## Use loops for 14 Chapters
+####### Change final sequence number if your book has a different number of chapters #######
 
 for i in `seq 1 14`;
 do
 
-    cd ~/Desktop/RRBook/Source
+    cd ~/Desktop/Book/Source
 
     CHP_NAME=Chapter$i 
  
     mkdir $CHP_NAME
     
-    cd ~/Desktop/RRBook/Source/$CHP_NAME
+    cd ~/Desktop/Book/Source/$CHP_NAME
     
     mkdir images$i
 
@@ -43,7 +44,7 @@ do
 cat > chapter$i.Rmd << _EOF_
 <!---
  Chapter $CHAPTER For Reproducible Research in R/RStudio
- Christopher Gandrud
+ Author
  Created $CURRENT_TIME
  Updated 
 --->
