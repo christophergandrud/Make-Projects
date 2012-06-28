@@ -1,5 +1,5 @@
 ##########
-# Shell script to create directories & files for A Book with 14 Chapters
+# Shell script to create directories & files for A Book with 14 Chapters written in knitr Markdown
 # Christopher Gandrud
 # Updated 28 June 2012
 # Helpful information found in "The Linux Command Line: A Complete Introduction" (Shotts 2012)
