@@ -43,7 +43,7 @@ do
 
 cat > chapter$i.Rmd << _EOF_
 <!---
- Chapter $CHAPTER For Reproducible Research in R/RStudio
+ Chapter $CHAPTER 
  Author
  Created $CURRENT_TIME
  Updated 
