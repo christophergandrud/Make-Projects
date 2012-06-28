@@ -1,11 +1,11 @@
-#!/bin/bash
-
 ##########
 # Shell script to create directories & files for A Book with 14 Chapters
 # Christopher Gandrud
 # Updated 28 June 2012
 # Helpful information found in "The Linux Command Line: A Complete Introduction" (Shotts 2012)
 ##########
+
+#!/bin/bash
 
 cd ~/Desktop
 
