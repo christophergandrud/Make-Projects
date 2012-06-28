@@ -41,12 +41,12 @@ do
     CURRENT_TIME=$(date +"%x %r %Z")
 
 cat > chapter$i.Rmd << _EOF_
-###########
-# Chapter $CHAPTER For Reproducible Research in R/RStudio
-# Christopher Gandrud
-# Created $CURRENT_TIME
-# Updated 
-###########
+<!---
+ Chapter $CHAPTER For Reproducible Research in R/RStudio
+ Christopher Gandrud
+ Created $CURRENT_TIME
+ Updated 
+--->
 
 \chapter{$CHAPTER:}
 
