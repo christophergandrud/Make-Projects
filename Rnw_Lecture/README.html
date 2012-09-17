@@ -149,27 +149,27 @@ hr {
 
 <h2>Updated: 17 September</h2>
 
-<p>This file explanation how to use the <code>LectureCreator.sh</code>.</p>
+<p>This file explains how to use the <code>LectureCreator.sh</code> bash shell script.</p>
 
 <hr/>
 
 <h2>About</h2>
 
-<p>The simple bash shell script <code>LectureCreator.sh</code> automatically creates a <a href="http://yihui.name/knitr/">knitr</a> <a href="http://en.wikipedia.org/wiki/Beamer_(LaTeX">Beamer slideshow</a>. </p>
+<p>The simple script <code>LectureCreator.sh</code> automatically creates a <a href="http://yihui.name/knitr/">knitr</a> <a href="http://en.wikipedia.org/wiki/Beamer_(LaTeX">beamer slideshow</a>. </p>
 
 <p>You define whether the slideshow should be called a <em>Lecture</em> or a <em>Seminar</em>. You also decide what number the file should have.</p>
 
 <p>The script then creates a basic <code>.Rnw</code> <em>knitr</em> beamer slide show, complete with header, footer, and necessary style files.</p>
 
-<p>I use this script to create lecture and seminar slide shows for an <a href="http://christophergandrud.github.com/Introduction_to_Statistics_and_Data_Analysis_Yonsei/">introductory applied stats class</a> that I teach.</p>
+<p>I use this script to create lecture and seminar slide shows for an <a href="http://christophergandrud.github.com/Introduction_to_Statistics_and_Data_Analysis_Yonsei/">introductory applied stats class</a> that I teach. For me, the numbers correspond to the week that the slideshow is for.</p>
 
 <h2>Components</h2>
 
-<p>The Lecture Creator consists of a shell script file <code>LectureCreator.sh</code> and a folder called <code>CommonFiles</code>. There are three files in the <code>CommonFiles</code> folder. These are the style files and the basic beamer slide show file.</p>
+<p>The Lecture Creator consists of a shell script file <code>LectureCreator.sh</code> and a folder called <code>CommonFiles</code>. There are three files in the <code>CommonFiles</code> folder. These are the style files and the basic beamer slide show file. This folder also has a file called <code>README.Rmd</code>, used to create the explanation you are currently reading.</p>
 
 <h2>Set Up &amp; Run</h2>
 
-<p>Before running the shell script <code>LectureCreator.sh</code> on your Linux or Mac machine you must give it the correct permissions. Set your working directory (using <code>cd</code>) to the folder where <code>LectureCreator.sh</code>. On my computer it is in <code>/git_repositories/MakeProjects/Rnw_Lecture/</code></p>
+<p>Before running the shell script <code>LectureCreator.sh</code> on your Linux or Mac machine you must give it the correct permissions. Set your working directory (using the <code>cd</code> command) to the folder where <code>LectureCreator.sh</code> is located. On my computer it is in <code>/git_repositories/MakeProjects/Rnw_Lecture/</code></p>
 
 <pre><code class="bash">cd /git_repositories/MakeProjects/Rnw_Lecture/
 </code></pre>
@@ -179,7 +179,7 @@ hr {
 <pre><code class="bash">chmod 755 LectureCreator.sh
 </code></pre>
 
-<p>Make sure you the file has the correct permissions like this:</p>
+<p>Make sure the file has the correct permissions like this:</p>
 
 <pre><code class="bash">ls -l LectureCreator.sh
 </code></pre>
@@ -200,7 +200,7 @@ hr {
 Please enter the lecture number you want to compile.
 </code></pre>
 
-<p>Simply type in &ldquo;Lecture&rdquo; or &ldquo;Seminar&rdquo; depending on what you would like to create and the number.</p>
+<p>Simply type in &ldquo;Lecture&rdquo; or &ldquo;Seminar&rdquo; depending on what you would like to create after the first prompt. Obviously type the number you want to give the slideshow after the second.</p>
 
 </body>
 
