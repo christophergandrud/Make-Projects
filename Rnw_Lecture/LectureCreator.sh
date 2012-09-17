@@ -8,7 +8,7 @@
 #!/bin/bash
 
 read -p "Do you want to make a Lecture or Seminar? -> " l
-read -p "Please enter the lecture number you want to compile -> " i
+read -p "Please enter the lecture number you want to compile. -> " i
 
 # Make a new directory in the Lecture Folder
 mkdir /Lectures/$l$i

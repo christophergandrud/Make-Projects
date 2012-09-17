@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<title>Explanation of how <code>LectureCreator.sh</code> works &amp; how to use it.</title>
+<title>README <code>LectureCreator.sh</code></title>
 
 <base target="_blank"/>
 
@@ -143,13 +143,64 @@ hr {
 </head>
 
 <body>
-<h1>Explanation of how <code>LectureCreator.sh</code> works &amp; how to use it.</h1>
+<h1>README <code>LectureCreator.sh</code></h1>
 
 <h2>Christopher Gandrud</h2>
 
 <h2>Updated: 17 September</h2>
 
+<p>This file explanation how <code>LectureCreator.sh</code> works &amp; how to use it.</p>
+
 <hr/>
+
+<h2>About</h2>
+
+<p>The bash shell script <code>LectureCreator.sh</code> automatically creates a <a href="http://yihui.name/knitr/">knitr</a> Beamer slideshow. </p>
+
+<p>You define whether the slideshow should be called a <em>Lecture</em> or a <em>Seminar</em>. You also decide what number the file should have.</p>
+
+<p>The script then creates a basic <code>.Rnw</code> <em>knitr</em> beamer slide show, complete with header, footer, and necessary style files.</p>
+
+<p>I use this script to create lecture and seminar slide shows for an <a href="http://christophergandrud.github.com/Introduction_to_Statistics_and_Data_Analysis_Yonsei/">introductory applied stats class I teach</a>.</p>
+
+<h2>Components</h2>
+
+<p>The Lecture Creator consists of a shell script file <code>LectureCreator.sh</code> and a folder called <code>CommonFiles</code>. There are three files in the <code>CommonFiles</code> folder. These are the style files and the basic beamer slide show file.</p>
+
+<h2>Set Up &amp; Run</h2>
+
+<p>Before running the shell script <code>LectureCreator.sh</code> on your Linux or Mac machine you must give it the correct permissions. Set your working directory (using <code>cd</code>) to the folder where <code>LectureCreator.sh</code>. On my computer it is in <code>/git_repositories/MakeProjects/Rnw_Lecture/</code></p>
+
+<pre><code class="bash">cd /git_repositories/MakeProjects/Rnw_Lecture/
+</code></pre>
+
+<p>Now change the permissions so that you can run the shell script:</p>
+
+<pre><code class="bash">chmod 755 LectureCreator.sh
+</code></pre>
+
+<p>Make sure you the file has the correct permissions like this:</p>
+
+<pre><code class="bash">ls -l LectureCreator.sh
+</code></pre>
+
+<pre><code>-rwxr-xr-x@ 1 christophergandrud  admin  698 Sep 17 17:27 LectureCreator.sh
+</code></pre>
+
+<p>Everything looks fine.</p>
+
+<p>To run the shell script type:</p>
+
+<pre><code class="bash">./LectureCreator.sh
+</code></pre>
+
+<p>When you run the script you will be given two prompts:</p>
+
+<pre><code class="bash">Do you want to make a Lecture or Seminar?
+Please enter the lecture number you want to compile.
+</code></pre>
+
+<p>Simply type in &ldquo;Lecture&rdquo; or &ldquo;Seminar&rdquo; depending on what you would like to create and the number.</p>
 
 </body>
 
