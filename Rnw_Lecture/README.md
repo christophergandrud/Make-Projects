@@ -2,19 +2,19 @@
 ## Christopher Gandrud
 ## Updated: 17 September
 
-This file explanation how `LectureCreator.sh` works & how to use it.
+This file explanation how to use the `LectureCreator.sh`.
 
 ---
 
 ## About
 
-The bash shell script `LectureCreator.sh` automatically creates a [knitr](http://yihui.name/knitr/) Beamer slideshow. 
+The simple bash shell script `LectureCreator.sh` automatically creates a [knitr](http://yihui.name/knitr/) [Beamer slideshow](http://en.wikipedia.org/wiki/Beamer_(LaTeX). 
 
 You define whether the slideshow should be called a *Lecture* or a *Seminar*. You also decide what number the file should have.
 
 The script then creates a basic `.Rnw` *knitr* beamer slide show, complete with header, footer, and necessary style files.
 
-I use this script to create lecture and seminar slide shows for an [introductory applied stats class I teach](http://christophergandrud.github.com/Introduction_to_Statistics_and_Data_Analysis_Yonsei/).
+I use this script to create lecture and seminar slide shows for an [introductory applied stats class](http://christophergandrud.github.com/Introduction_to_Statistics_and_Data_Analysis_Yonsei/) that I teach.
 
 ## Components
 The Lecture Creator consists of a shell script file `LectureCreator.sh` and a folder called `CommonFiles`. There are three files in the `CommonFiles` folder. These are the style files and the basic beamer slide show file.
@@ -44,7 +44,7 @@ ls -l LectureCreator.sh
 ```
 
 ```
--rwxr-xr-x@ 1 christophergandrud  admin  698 Sep 17 17:27 LectureCreator.sh
+-rwxr-xr-x@ 1 christophergandrud  admin  749 Sep 17 17:34 LectureCreator.sh
 ```
 
 
@@ -66,4 +66,4 @@ Please enter the lecture number you want to compile.
 ```
 
 
-Simply type in ``Lecture" or "Seminar" depending on what you would like to create and the number.
+Simply type in "Lecture" or "Seminar" depending on what you would like to create and the number.
