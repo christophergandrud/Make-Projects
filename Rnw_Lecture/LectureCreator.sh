@@ -7,6 +7,7 @@
 
 #!/bin/bash
 
+# Prompt user to define Lecture/Seminar and Number
 read -p "Do you want to make a Lecture or Seminar? -> " l
 read -p "Please enter the lecture number you want to compile. -> " i
 
