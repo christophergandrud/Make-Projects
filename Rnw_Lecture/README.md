@@ -7,7 +7,7 @@ This file explains how to use the `LectureCreator.sh` bash shell script.
 
 ## About
 
-The simple script `LectureCreator.sh` automatically creates a [knitr](http://yihui.name/knitr/) [beamer slideshow](http://en.wikipedia.org/wiki/Beamer_(LaTeX). 
+The simple script `LectureCreator.sh` automatically creates a [knitr](http://yihui.name/knitr/) [beamer slideshow](http://en.wikipedia.org/wiki/Beamer_(LaTeX)). 
 
 You define whether the slideshow should be called a *Lecture* or a *Seminar*. You also decide what number the file should have.
 
