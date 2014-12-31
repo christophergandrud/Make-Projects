@@ -1,6 +1,5 @@
 # README `LectureCreator.sh`
 ## Christopher Gandrud
-## Updated: 17 September
 
 This file explains how to use the `LectureCreator.sh` bash shell script.
 
